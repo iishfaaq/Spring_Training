@@ -14,7 +14,7 @@ public class MyApp {
 		System.out.println(TheCoach.getDailyWorkout());
 		System.out.println(TheCoach2.getDailyWorkout());
 		System.out.println(TheCoach2.getDailyWorkout());
-		System.out.println(f);
+
 		
 	}
 
