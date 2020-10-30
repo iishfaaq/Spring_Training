@@ -4,6 +4,10 @@ public class BaseballCoach implements Coach {
 	
 	private FortuneTeller fortuneTeller;
 	
+	public BaseballCoach() {
+		
+	}
+	
 	public BaseballCoach(FortuneTeller fortuneTeller) {
 		this.fortuneTeller = fortuneTeller;
 	}

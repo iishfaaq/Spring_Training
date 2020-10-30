@@ -7,6 +7,7 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+	<context:property-placeholder location="classpath:coach.properties"/>
 	
     <!-- Define your beans here -->
     
@@ -17,6 +18,24 @@
 
 <bean 	id		="myCoach" class 	="springdemo.TrackCoach">
 <constructor-arg ref="myFortune"> </constructor-arg>
+</bean>
+
+<bean 	id		="myCoach2" class 	="springdemo.BaseballCoach">
+<constructor-arg ref="myFortune"> </constructor-arg>
+</bean>
+
+<bean 	id		="cricketCoach" class 	="springdemo.CricketCoach">
+<property name="fortuneTeller" ref="myFortune"></property>
+<property name="name" value="Ishfaaq"></property>
+<property name="emailAddress" value="iishfaaq@gmail.com"></property>
+
+</bean>
+
+<bean 	id		="cricketCoach2" class 	="springdemo.CricketCoach">
+<property name="fortuneTeller" ref="myFortune"></property>
+<property name="name" value="${coach.username}"></property>
+<property name="emailAddress" value="${coach.name}"></property>
+
 </bean>
 </beans>
 
