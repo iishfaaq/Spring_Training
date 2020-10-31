@@ -15,7 +15,7 @@
 
 </bean>
 
-<bean 	id		="myCoach" class 	="springdemo.TrackCoach">
+<bean 	id		="myCoach" class 	="springdemo.TrackCoach" init-method="initMethod" destroy-method="destroyMethod">
 <constructor-arg ref="myFortune"> </constructor-arg>
 </bean>
 

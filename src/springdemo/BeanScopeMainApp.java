@@ -19,10 +19,14 @@ public class BeanScopeMainApp {
 		boolean res2 = (Coach3 == Coach4);
 		
 		System.out.println(res);  // this will be true because scope of the trackcoach is singleton by default
+		System.out.println(Coach); 
+		System.out.println(Coach2); 
 		System.out.println(res2); // this will be false because we changed the scope of the BaseballCoach is prototype 
 								  // Which will create multiple objects
+		System.out.println(Coach3); 
+		System.out.println(Coach4); 
 		
-		context.close();
+		context.close(); //Destroy method will be call after the context.close call
 
 	}
 

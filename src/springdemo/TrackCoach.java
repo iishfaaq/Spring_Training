@@ -6,7 +6,9 @@ public class TrackCoach implements Coach {
 	
 	
 	public TrackCoach(FortuneTeller fortuneTeller) {
+		System.out.println("I am inside the constructor of TrackCoach");
 		this.fortuneTeller = fortuneTeller;
+		
 	}
 
 
@@ -20,6 +22,18 @@ public class TrackCoach implements Coach {
 	@Override
 	public String getDailyFortune() {
 		return fortuneTeller.getFortune();
+	}
+	
+	
+	
+	public void initMethod() {
+		
+		System.out.println("I am inside the initilizing method");
+	}
+	
+	public void destroyMethod() {
+		
+		System.out.println("I am inside the destroy method");
 	}
 
 }
