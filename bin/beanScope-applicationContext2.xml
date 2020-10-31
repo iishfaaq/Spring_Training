@@ -15,11 +15,11 @@
 
 </bean>
 
-<bean 	id		="myCoach" class 	="springdemo.TrackCoach" scope="prototype">
+<bean 	id		="myCoach" class 	="springdemo.TrackCoach">
 <constructor-arg ref="myFortune"> </constructor-arg>
 </bean>
 
-<bean 	id		="myCoach2" class 	="springdemo.BaseballCoach">
+<bean 	id		="myCoach2" class 	="springdemo.BaseballCoach" scope="prototype">
 <constructor-arg ref="myFortune"> </constructor-arg>
 </bean>
 
